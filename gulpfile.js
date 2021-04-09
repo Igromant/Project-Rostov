@@ -26,15 +26,4 @@ function serveSass() {
 
 exports.serve = bs;
 
-
-//cssmin
-var cssmin = require('gulp-cssmin');
-var rename = require('gulp-rename');
- 
-
-function cssmin() {
-    gulp.src('src/**/*.css')
-        .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(dest('dist'));
-};
+//CssMin
