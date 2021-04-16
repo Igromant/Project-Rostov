@@ -12,6 +12,33 @@
             display: none
         &__content
             margin-left: 0
+@media screen and ( max-width: 760px )
+    .row
+        flex-direction: column
+        align-items: center
+    .types
+        &__card
+            margin-bottom: 5.29rem
+    .card
+        &__text
+            margin-left: 0
+            max-height: 244px
+    .design
+        &__card
+            margin-bottom: 5.29rem
+        &__block
+            &__image
+                &::before
+                    content: none
+        &__last
+            &__item
+                &:nth-child(n+8)
+                    display: none
+                &:nth-child(7)
+                    &::after
+                        content: '...'
+                        margin-left: 0.4rem
+                        font-size: 1.25rem
 @media screen and ( max-width: 570px )
     .contacts
         &__phone
