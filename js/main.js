@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    const modal = document.querySelector('.modal')
+    const modal = document.querySelector('.modal');
     const modalBtn = document.querySelectorAll('[data-toggle=modal]');
     const closeBtn = document.querySelector('.modal__close');
     const switchModal = () => {
@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     closeBtn.addEventListener('click', switchModal);
-
 });
   
+
+document.addEventListener('keydown', function(event) {
+    const modal = document.querySelector('.modal');
+    if (event.key == 'Escape' || event.code === 27 ) {
+    modal.classList.remove('modal--visible');
+    }
+});
+
