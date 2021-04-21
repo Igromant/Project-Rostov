@@ -20,6 +20,31 @@
         color: $light
         max-width: 204px
         width: 100%
+    &__upward
+        display: none
+        position: fixed
+        padding: 1.214rem 4rem 1.214rem 1.5rem
+        border: none
+        border-radius: 2px
+        text-transform: uppercase
+        font-size: 1.35rem
+        bottom: 2% 
+        right: 1.25%
+        &:hover
+            cursor: pointer 
+        &::after
+            content: ''
+            background: url('../img/arrow-down.svg') no-repeat center 
+            background-color: $primary
+            background-blend-mode: color-dodge
+            transform: rotate(180deg)
+            border: 2px solid #fff8d2
+            border-radius: 50%
+            margin-left: 12px   
+            min-height: 2.2rem 
+            min-width: 2.2rem
+            position: absolute
+            bottom: 22%
 .label
     font-size: 1.07rem
     &--light
