@@ -59,4 +59,24 @@ $(document).ready(function () {
         }, 500);
         return false;
     });
+
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+      });
+      const next = $('.swiper-button-next');
+      const prev = $('.swiper-button-prev');
+      const bullets = $('.swiper-pagination');
+
+      next.css('left', prev.width() + 15 + bullets.width() + 15 );
+      bullets.css('left',  prev.width() + 15);
+    
 });
