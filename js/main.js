@@ -60,23 +60,45 @@ $(document).ready(function () {
         return false;
     });
 
-    const swiper = new Swiper('.swiper-container', {
+    const swiper = new Swiper('.swiper1', {
         // Optional parameters
         loop: true,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.pagination1',
             type: 'bullets',
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.button-next1',
+            prevEl: '.button-prev1',
         },
       });
-      const next = $('.swiper-button-next');
-      const prev = $('.swiper-button-prev');
-      const bullets = $('.swiper-pagination');
+      const next = $('.button-next1');
+      const prev = $('.button-prev1');
+      const bullets = $('.pagination1');
 
       next.css('left', prev.width() + 15 + bullets.width() + 15 );
       bullets.css('left',  prev.width() + 15);
     
+      const mySwiper = new Swiper('.swiper2', {
+        // Optional parameters
+        loop: true,
+        pagination: {
+            el: '.pagination2',
+            type: 'bullets',
+        },
+        navigation: {
+            nextEl: '.button-next2',
+            prevEl: '.button-prev2',
+        },
+
+      });
+      const myNext = $('.button-next2');
+      const myPrev = $('.button-prev2');
+      const myBullets = $('.pagination2');
+
+      myNext.css('left', myPrev.width() + 15 + myBullets.width() + 15 );
+      myBullets.css('left',  myPrev.width() + 15);
+
+
+      new WOW().init();
 });

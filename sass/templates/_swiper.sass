@@ -1,0 +1,54 @@
+.swiper
+    &-slide
+        display: flex
+        flex-wrap: wrap
+    &-pagination
+        &-bullet
+            background-color: rgba($light, 0.3)
+            &-active
+                background-color:  $light
+    &-button
+        &-prev, &-next
+            bottom: 0
+            top: auto
+            background-size: 42px 
+            width: 42px
+            height: 14px
+            &::after
+                display: none
+        &-prev
+            left: 0
+            background: url('../img/arrow-prev.svg') no-repeat center
+        &-next
+            background: url('../img/arrow-next.svg') no-repeat center
+.swiper-container-horizontal>.swiper-pagination-bullets
+    width: auto
+    bottom: 0.5px
+
+
+.chapters
+    margin-top: 5.5rem
+    display: flex
+    flex-wrap: wrap
+    width: auto
+.chapter
+    opacity: 0.5
+    flex-basis: 17%
+    margin-right: 10rem
+    text-align: left
+    margin-bottom: 2rem
+    padding-bottom: 2rem
+    &:nth-child(3), &:nth-child(6)
+        margin: 0
+.active
+    opacity: 1
+    &__text
+        font-size: 1.07rem
+        line-height: 1.78rem
+    &__number
+        width: 1.357rem
+        font-family: "Yeseva One", cursive
+        font-size: 1.07rem
+        line-height: 1.5rem
+        text-transform: uppercase
+        border-bottom: 1px solid $primary  

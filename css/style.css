@@ -379,11 +379,11 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
-  .input::-moz-placeholder {
+  .input--light::-moz-placeholder {
     color: #fff; }
-  .input:-ms-input-placeholder {
+  .input--light:-ms-input-placeholder {
     color: #fff; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
@@ -446,6 +446,8 @@ img {
     color: #fff; }
   .section-title {
     text-align: center; }
+    .section-title--light {
+      color: #fff; }
     .section-title--left {
       text-align: left; }
     .section-title__heading {
@@ -685,45 +687,86 @@ img {
   .title--primary {
     color: #E3B873; }
 
-.swiper-slide {
+.projects {
+  padding-bottom: 30rem; }
+
+.swiper-slide__text {
+  flex-basis: 50%;
+  margin-bottom: 2.42rem;
+  padding-bottom: 2rem; }
+
+.swiper-slide__heading {
+  font-size: 1.285rem;
+  line-height: 1.78rem;
+  font-family: "Yeseva One", cursive;
+  color: #E3B873;
+  text-transform: uppercase;
+  margin-bottom: 0.64rem; }
+
+.control__video {
+  position: relative;
   display: flex;
-  flex-wrap: wrap; }
-  .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
-  .swiper-slide__heading {
-    font-size: 1.285rem;
-    line-height: 1.78rem;
-    font-family: "Yeseva One", cursive;
-    color: #E3B873;
-    text-transform: uppercase;
-    margin-bottom: 0.64rem; }
+  margin: auto;
+  margin-bottom: 4.428rem;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/video-mask.jpg") center no-repeat;
+  filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15)); }
+  .control__video::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
 
-.swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
-  .swiper-pagination-bullet-active {
-    background-color: #fff; }
+.control__section-title {
+  margin-bottom: 2.214rem;
+  margin-top: -30rem; }
 
-.swiper-button-prev, .swiper-button-next {
-  bottom: 0;
-  top: auto;
-  background-size: 42px;
-  width: 42px;
-  height: 14px; }
-  .swiper-button-prev::after, .swiper-button-next::after {
-    display: none; }
+.control__text {
+  max-width: 40.785rem;
+  margin: auto;
+  margin-bottom: 4.285rem;
+  text-align: center;
+  font-size: 1.428rem;
+  line-height: 2.4rem; }
+  .control__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    border-radius: 30px; }
 
-.swiper-button-prev {
-  left: 0;
-  background: url("../img/arrow-prev.svg") no-repeat center; }
+.control__label {
+  margin-bottom: -7px; }
 
-.swiper-button-next {
-  background: url("../img/arrow-next.svg") no-repeat center; }
+.control__form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto;
+  justify-content: space-between; }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  width: auto;
-  bottom: 0.5px; }
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1.2rem; }
+  .control__policy__label {
+    justify-content: center; }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__button {
+  padding: 1.2857rem 4.7857rem; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
 
 .types__section-title {
   margin-bottom: 2.214rem; }
@@ -740,29 +783,30 @@ img {
     height: 99.2%;
     background-color: rgba(19, 19, 19, 0.3); }
 
-.swiper-slide {
-  display: flex;
-  flex-wrap: wrap; }
-  .swiper-slide__definition {
-    flex-basis: 65%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 3.5rem; }
-  .swiper-slide__worth {
-    font-size: 1.07rem;
-    line-height: 1.78rem; }
-  .swiper-slide__number {
-    font-family: "Yeseva One", cursive;
-    font-size: 1.28rem;
-    line-height: 1.785rem;
-    text-transform: uppercase; }
-  .swiper-slide__header {
-    font-size: 1.07rem;
-    line-height: 1.64rem;
-    font-family: "Yeseva One", cursive;
-    color: #E3B873;
-    text-transform: uppercase;
-    margin-bottom: 1.142rem;
-    width: 50%; }
+.swiper-slide__definition {
+  flex-basis: 65%;
+  margin-bottom: 2.42rem;
+  padding-bottom: 3.5rem;
+  margin-top: 4rem; }
+
+.swiper-slide__worth {
+  font-size: 1.07rem;
+  line-height: 1.78rem; }
+
+.swiper-slide__number {
+  font-family: "Yeseva One", cursive;
+  font-size: 1.28rem;
+  line-height: 1.785rem;
+  text-transform: uppercase; }
+
+.swiper-slide__header {
+  font-size: 1.07rem;
+  line-height: 1.64rem;
+  font-family: "Yeseva One", cursive;
+  color: #E3B873;
+  text-transform: uppercase;
+  margin-bottom: 1.142rem;
+  width: 50%; }
 
 .modal {
   opacity: 0;
@@ -816,6 +860,64 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0.5px; }
+
+.chapters {
+  margin-top: 5.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto; }
+
+.chapter {
+  opacity: 0.5;
+  flex-basis: 17%;
+  margin-right: 10rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem; }
+  .chapter:nth-child(3), .chapter:nth-child(6) {
+    margin: 0; }
+
+.active {
+  opacity: 1; }
+  .active__text {
+    font-size: 1.07rem;
+    line-height: 1.78rem; }
+  .active__number {
+    width: 1.357rem;
+    font-family: "Yeseva One", cursive;
+    font-size: 1.07rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E3B873; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -823,6 +925,8 @@ img {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
+  .working {
+    display: none; }
   .nav {
     display: none; }
   .hero__instagram {
