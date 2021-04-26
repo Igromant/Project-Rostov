@@ -366,6 +366,12 @@ template {
       min-width: 2.2rem;
       position: absolute;
       bottom: 22%; }
+  .button__icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 2.14rem; }
+    .button__icon:hover {
+      cursor: pointer; }
 
 .label {
   font-size: 1.07rem; }
@@ -413,6 +419,12 @@ label.invalid {
 
 input.invalid {
   border-bottom: 1px solid #ff0000; }
+
+.icon-instagram {
+  background: #E3B873 url("../img/instagram-icon.svg") no-repeat center; }
+
+.icon-gmail {
+  background: #E3B873 url("../img/gmail-icon.svg") no-repeat center; }
 
 .container {
   width: 85%;
@@ -960,6 +972,12 @@ img {
     text-align: center;
     margin-bottom: 3.214rem;
     margin-top: 0; }
+    .footer__title--primary {
+      margin: auto;
+      color: #E3B873;
+      max-width: 36rem;
+      line-height: 2rem;
+      margin-bottom: 2rem; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -982,6 +1000,13 @@ img {
   .footer__button {
     margin: auto;
     padding: 1.285rem 4.85rem; }
+
+.mall-plaza__social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 6rem;
+  margin: auto;
+  margin-bottom: 3.2rem; }
 
 @media screen and (max-width: 1200px) {
   html {
