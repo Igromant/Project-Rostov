@@ -407,6 +407,13 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+label.invalid {
+  color: #ff0000;
+  margin-top: 0.88rem; }
+
+input.invalid {
+  border-bottom: 1px solid #ff0000; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -857,9 +864,11 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
+    .modal__input-group:last-of-type {
       margin-bottom: 1.1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
@@ -928,6 +937,11 @@ img {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   background-blend-mode: overlay;
   padding-top: 3rem; }
+  .footer__map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.7rem;
+    min-height: 465px; }
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
