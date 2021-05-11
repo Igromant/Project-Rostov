@@ -129,6 +129,21 @@ $(document).ready(function () {
               required: "Обязательно укажите Email",
               email: "Введите в формате name@domain.com"
             }
+          },
+          submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert('Форма отправлена, мы свяжемся с вами черезм 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                },
+                error: function (response) {
+                    console.error('Ошибка запроса' + response);
+                }
+            });
           }
       });
 
